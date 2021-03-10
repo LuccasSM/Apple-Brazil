@@ -1,0 +1,569 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'SF Pro Display', 'Roboto', sans-serif;
+    font-size: 1em;
+}
+html{
+    scroll-behavior: smooth; /* ISSO AQUI SCROOLA KKKK */
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+.header{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background: #333333;
+}
+nav{
+    width: 1000px;
+    margin: 0 auto;
+    height: 50px;
+    align-items: center;
+    color: #d6d6d6;
+    display: flex;
+    justify-content: space-between;
+}
+nav .mainMenu{
+    display: flex;
+    list-style: none;
+}
+nav .mainMenu li a{
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    color: #d6d6d6;
+    transition: color .5s;
+    cursor: pointer;
+}
+nav .mainMenu li a:hover{
+    color: #fff;
+}
+nav .openMenu{
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+nav .mainMenu .closeMenu , .icons i{
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+}
+.fa-apple{ /* LOGO AQUI */
+    color: #d6d6d6;
+}
+nav .logo{ /* LOGO AQUI */
+    margin-left: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+nav .fa-bars{ /* MENU AQUI */
+    font-size: 20px;
+}
+.fa-search{ /* LUPA AQUI */
+    margin-right: 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.start{
+    width: 100%;
+    height: 650px;
+    background-image: url('img/inicio-12-pro.png');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container-start{
+    float: right;
+    margin-top: 50px;
+}
+.title-start{ 
+    font-size: 30px;
+    color: #fff;
+    margin-right: 50px;
+    margin-top: 20px; 
+}
+.p1{
+    font-size: 24px;
+    color: #fff;
+    margin-top: 5px; 
+}
+.p2{
+    font-size: 30px;
+    color: #fff;
+    margin-top: 5px;
+}
+.title{
+    text-align: center;
+    font-size: 3em;
+    margin-top: 20px;
+}
+.border-black{
+    width: 200px;
+    height: 1px;
+    background: #333333;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.container{
+    height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+.ipad{
+    background-image: url('img/ipad.jpg');
+    flex: 1 1 48%;
+    margin: 0.5%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ipad p{
+    font-weight: bold;
+    font-size: 30px;
+    opacity: 0;
+}
+.ipad:hover p{
+    opacity: 1;
+}
+.ipad:hover div{
+    background-color: rgba(255, 249, 248, 0.658);
+    cursor: pointer;
+}
+.ipad div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: color .5s;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ease;
+}
+.iphone{
+    background-image: url('img/iphone.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 1 1 48%;
+    margin: 0.5%;
+}
+.iphone div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: color .5s;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ease;
+}
+.iphone p{
+    font-weight: bold;
+    font-size: 30px;
+    opacity: 0;
+}
+.iphone:hover p{
+    opacity: 1;
+}
+.iphone:hover div{
+    background-color: rgba(255, 249, 248, 0.658);
+    cursor: pointer;
+}
+.macbook{
+    background-image: url('img/macbook.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 1 1 48%;
+    margin: 0.5%;
+}
+.macbook div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: color .5s;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ease;
+}
+.macbook p{
+    font-weight: bold;
+    font-size: 30px;
+    opacity: 0;
+}
+.macbook:hover p{
+    opacity: 1;
+}
+.macbook:hover div{
+    background-color: rgba(255, 249, 248, 0.658);
+    cursor: pointer;
+}
+.watch{
+    background-image: url('img/watch.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 1 1 48%;
+    margin: 0.5%;
+}
+.watch div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: color .5s;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ease;
+}
+.watch p{
+    font-weight: bold;
+    font-size: 30px;
+    opacity: 0;
+}
+.watch:hover p{
+    opacity: 1;
+}
+.watch:hover div{
+    background-color: rgba(255, 249, 248, 0.658);
+    cursor: pointer;
+}
+.container2{
+    height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+.section-div{
+    margin: 0 auto;
+    font-weight: bold;
+}
+.container2{
+    width: 100%;
+    height: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.awards1{
+    background-image: url('img/container2-1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 1 1 48%;
+    margin: 0.5%;
+}
+.awards1 div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: color .5s;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ease;
+}
+.awards1 p{
+    font-weight: bold;
+    font-size: 30px;
+    opacity: 0;
+}
+.awards1:hover p{
+    opacity: 1;
+}
+.awards1:hover div{
+    background-color: rgba(255, 249, 248, 0.658);
+    cursor: pointer;
+}
+.awards2{
+    background-image: url('img/container2-2.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 1 1 48%;
+    margin: 0.5%;
+}
+.awards2 div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: color .5s;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ease;
+}
+.awards2 p{
+    font-weight: bold;
+    font-size: 30px;
+    opacity: 0;
+}
+.awards2:hover p{
+    opacity: 1;
+}
+.awards2:hover div{
+    background-color: rgba(255, 249, 248, 0.658);
+    cursor: pointer;
+}
+.awards3{
+    background-image: url('img/container2-3.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 1 1 48%;
+    margin: 0.5%;
+}
+.awards3 div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: color .5s;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ease;
+}
+.awards3 p{
+    font-weight: bold;
+    font-size: 30px;
+    opacity: 0;
+}
+.awards3:hover p{
+    opacity: 1;
+}
+.awards3:hover div{
+    background-color: rgba(255, 249, 248, 0.658);
+    cursor: pointer;
+}
+.awards4{
+    background-image: url('img/container2-4.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 1 1 48%;
+    margin: 0.5%;
+}
+.awards4 div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: color .5s;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ease;
+}
+.awards4 p{
+    font-weight: bold;
+    font-size: 30px;
+    opacity: 0;
+}
+.awards4:hover p{
+    opacity: 1;
+}
+.awards4:hover div{
+    background-color: rgba(255, 249, 248, 0.658);
+    cursor: pointer;
+}
+.container3{
+    width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+.container3 > div:nth-child(1){
+    grid-row: 1 / 3;
+}
+.container4{
+    margin-top: 50px;
+    width: 100%;
+    height: 550px;
+    background-image: url('img/suporte.png');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.footer{
+    height: 200px;
+    background: #f0f0f2;
+}
+.footer p{
+    text-align: center;
+    line-height: 67px;
+}
+@media screen and (max-width: 1200px){
+    .fa-apple{
+        margin-left: 20px;
+    }
+    .container3{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1000px){
+    .start{
+        background-image: url('img/iphone-12-pro.jpeg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .awards1, .awards2, .awards3, .awards4{
+        flex: 1 1 48%;
+        margin: 0.5%;
+        background-size: 500px;
+    }
+    .awards1, .awards2{
+        margin-top: -150px;
+    }
+    .awards3, .awards4{
+        margin-top: -500px;
+    }
+    .awards1:hover div, .awards2:hover div, .awards3:hover div, .awards4:hover div{
+        display: none;
+    }
+    .awards1:hover p, .awards2:hover p, .awards3:hover p, .awards4:hover p{
+        display: none;
+    }
+    .utilities-title{
+        margin-top: -320px;
+    }
+    .container3{
+        grid-template-columns: 1fr;
+        background: #f0f0f2;
+    }
+    .container3 > div{
+        width: 700px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 800px){
+    nav .mainMenu{
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        transition: top 1s ease;
+        display: none;
+    }
+    nav .openMenu{
+        display: block;
+    }
+    nav .mainMenu .closeMenu{
+        display: block;
+    }
+    nav .mainMenu li a:hover{
+        background: none;
+        color: #fff;
+        font-size: 1.6rem;
+    }
+}
+@media screen and (max-width: 770px){
+    .container3{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 700px){
+    .container3{
+        width: 100%;
+    }
+    .container3 div{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px){
+    .start{
+        background-image: url('img/iphone-12-pro-mobile.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .title-start{ 
+        font-size: 24px;
+    }
+    .p1{
+        font-size: 18px;
+    }
+    .p2{
+        font-size: 24px;
+    }
+    .ipad, .iphone, .macbook, .watch{
+        flex: 100%;
+        height: 100%;
+        background-size: 100%;
+    }
+    .ipad{
+        margin-top: -190px;
+    }
+    .iphone, .macbook, .watch{
+        margin-top: -400px;
+    }
+    .ipad:hover div, .iphone:hover div, .macbook:hover div, .watch:hover div{
+        display: none;
+    }
+    .ipad:hover p, .iphone:hover p, .macbook:hover p, .watch:hover p{
+        cursor: pointer;
+    }
+    .awards1:hover div, .awards2:hover div{
+        display: none;
+    }
+    .awards1:hover p, .awards2:hover p{
+        cursor: pointer;
+    }
+    .section-div{
+        margin-top: 500px;
+    }
+    .container2{
+       height: 1000px;
+       flex-direction: column;
+    }
+    .awards1{
+        background-image: url('img/iphone-awards-mobile.jpg');
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin-top: -330px;
+    }
+    .awards2{
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin-top: -650px;
+        margin-bottom: 20px;
+    }
+    .awards3, .awards4{
+        display: none;
+    }
+    .container3{
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: 1100px;
+    }
+    .container3 > div{
+        width: 400px;
+        margin: 0 auto;
+    }
+    .container3 > div:nth-child(2){
+        margin-top: -200px;
+    }
+    .container3 > div:nth-child(3){
+        margin-top: -80px;
+    }
+}
+@media screen and (max-width: 420px){
+    .container3{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 377px){
+    .container3{
+        width: 100%;
+    }
+    .container3 div{
+        width: 100%;
+    }
+}
